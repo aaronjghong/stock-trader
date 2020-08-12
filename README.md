@@ -9,4 +9,4 @@ transaction history along with their current portfolio and worth
 
 All users are given a starting value of $10000 upon account creation
 
-*Not all code is mine. The files in static/ layout.html, login.html, helpers.py and requirements.txt were all provided by CS50x*
+*Not all code is mine. The layout.html, login.html, helpers.py and requirements.txt the files in static/ as well as some lines in application.py were provided by CS50x*
