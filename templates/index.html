@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table style = "width:100%; border: 1px solid #d2d2d2; border-collapse: collapse;">
+        <tr>
+            <th>Stock</th>
+            <th>Amount</th>
+            <th>Price</th>
+        </tr>
+        {% for row in portfolio %}
+            <tr>
+                <td>{{ row['stock'] }}</td>
+                <td>{{ row['amount'] }}</td>
+                <td>{{ row['price'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <h3 style = "text-align: right;">Cash: {{ cash }}</h3>
+    <h2 style = "text-align: right;">Total Worth: {{ cash + sum }}</h2>
+{% endblock %}
